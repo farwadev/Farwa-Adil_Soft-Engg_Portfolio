@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | FARWA | projects</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul>
+                    <li><a href="portfolio.html">Home</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a class="active" href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+            <div class="grid-container">
+                <div><img src="uet.png" width="200px" height="200px"></div>
+                <div><img src="uet.png" width="200px" height="200px"></div>
+               
+                <div><p>E-Commerce Website (html,Css based)</p></div>
+                <div><p>Bootstrap Website (html,Css, Bootstrap based)</p></div>
+               
+            </div>
+            <h1>E-Commerce Website</h1>
+            <p>This website is baesd on <em>html,Css </em>and a littel bit of <em>js</em> i used js for the back to top buttons.</p>
+        </div>
+    </div>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(238, 221, 253);
+            color: aliceblue;
+        }
+
+        #header {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .container {
+            padding: 40px 10%;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            display: inline-block;
+
+            list-style: none;
+            margin: 10px 20px;
+        }
+
+        nav ul li a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 22px;
+        }
+
+        .logo {
+            max-width: 155px;
+        }
+
+        nav ul li a.active {
+            color: rgb(85, 27, 139);
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+
+            color: rgb(85, 27, 139);
+            font-weight: bold;
+
+        }
+
+        /* gridds */
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: 250px 80px;
+            gap: 5px;
+            box-shadow: 4px 10px 10px 4px rgba(0, 0, 0, 0.2);
+            padding: 5px;
+            margin-top: 5%;
+            background-color: rgb(85, 27, 139);
+        }
+
+        .grid-container>div {
+            background-color: #cfa6d6df;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+        .grid-container img{
+            border-radius: 100px;
+        }
+        h1{
+            margin-top: 3%;
+            color: rgb(85, 27, 139);
+        }
+        p{
+            color: rgb(85, 27, 139);
+            font-size: 24px;
+        }
+    </style>
+</body>
+
+</html>

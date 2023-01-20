@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | FARWA | Experience</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+
+                <img src="logo.png" class="logo">
+                <ul>
+                    <li><a href="portfolio.html">Home</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a class="active" href="experience.html">Experience</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+
+                </ul>
+            </nav>
+            <!-- navbar ends -->
+            <!-- flip cards start -->
+
+            <!-- flip card ends -->
+            <div class="grid-container">
+                <div class="container2">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="ititans.jpg" alt="Avatar" style="width:300px;height:300px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="ue.png" alt="Avatar" style="width:300px;height:300px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h1>Experience</h1>
+                    <h3>S.T.E.P iTitans Internee</h3>
+                    <h3>I just joined iTitans as a S.T.E.P trainee.
+                        I have also worked with some well established companies mostly as a Front-end Developer.
+                        I love organizing events and that is why
+                        I am also involved with many open source communities as a representative.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(238, 221, 253);
+            color: aliceblue;
+        }
+
+        #header {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .container {
+            padding: 40px 10%;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            display: inline-block;
+
+            list-style: none;
+            margin: 10px 20px;
+        }
+
+        nav ul li a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 22px;
+        }
+
+        .logo {
+            max-width: 155px;
+        }
+
+        nav ul li a.active {
+            color: rgb(85, 27, 139);
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+
+            color: rgb(85, 27, 139);
+            font-weight: bold;
+        }
+
+        /* flip card start */
+        h1 {
+            font-size: 34px;
+            color: rgb(85, 27, 139);
+            margin-top: 2%;
+        }
+
+        h3 {
+            font-size: 24px;
+            color: rgb(85, 27, 139);
+
+        }
+
+        .container2 {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            flex-direction: row;
+
+        }
+
+        .flip-card {
+            margin-top: 1%;
+            background-color: transparent;
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.9s;
+            transform-style: preserve-3d;
+            box-shadow: 0 8px 16px 0 rgba(110, 1, 156, 0.734);
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            background-color: #bbb;
+            color: black;
+        }
+
+        .flip-card-back {
+            background-color: #cfa6d6df;
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        /* grids */
+        .grid-container {
+            margin-top: 10%;
+            display: grid;
+            grid-template-columns: auto auto;
+
+
+
+        }
+
+        .grid-container>div {
+            padding: 20px;
+            background-color: rgba(249, 178, 252, 0.8);
+
+            text-align: center;
+            font-size: 30px;
+        }
+    </style>
+</body>
+
+</html>
